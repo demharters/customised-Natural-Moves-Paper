@@ -1,0 +1,52 @@
+
+~region[element_top_type{residue}
+    \dependency_type{independent}
+
+    \nres{16}
+    \residues{A:1,A:2,A:3,A:4,A:5,A:6,A:7,A:10,B:11,B:12,B:13,B:14,B:15,B:16,B:17,B:20}
+
+    \ncenter{1}
+    \centers{A:5}
+
+    \prop_trans_sig{0}
+    \prop_rot_sig{0}
+    \prop_trans_sig_freeres{1.e-5}
+    \prop_rot_sig_freeres{5.e-6}
+    \prop_trans_sig_respair{0}
+    \prop_rot_sig_respair{0}
+]
+
+~region[element_top_type{residue}
+    \dependency_type{independent}
+
+    \nres{2}
+    \residues{A:8,A:9}
+
+    \ncenter{1}
+    \centers{A:8}
+
+    \prop_trans_sig{1.e-5}
+    \prop_rot_sig{5.e-6}
+    \prop_trans_sig_freeres{0}
+    \prop_rot_sig_freeres{0}
+    \prop_trans_sig_respair{0}
+    \prop_rot_sig_respair{0}
+]
+
+~region[element_top_type{residue}
+    \dependency_type{independent}
+
+    \nres{2}
+    \residues{B:18,B:19}
+
+    \ncenter{1}
+    \centers{B:18}
+
+    \prop_trans_sig{1.e-5}
+    \prop_rot_sig{5.e-6}
+    \prop_trans_sig_freeres{0}
+    \prop_rot_sig_freeres{0}
+    \prop_trans_sig_respair{0}
+    \prop_rot_sig_respair{0}
+
+]

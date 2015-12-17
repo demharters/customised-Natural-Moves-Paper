@@ -1,0 +1,152 @@
+~region[\element_top_type{segment}
+    
+    \dependency_type{independent}
+    
+    \nseg{2}
+    \ncenter{2}
+    \segments_firstres{A:3,B:1}
+    \segments_lastres{A:44,B:50}
+    
+    \segments_baseres{A:23,B:25}
+    
+    \centers{A:23,B:25}
+    
+    \prop_trans_sig{1.e-5}
+    \prop_rot_sig{1.e-6}
+    \prop_trans_sig_freeres{0}
+    \prop_rot_sig_freeres{0}
+]
+    
+~region[\element_top_type{segment}
+    
+    \dependency_type{independent}
+    
+    \nseg{1}
+    \ncenter{1}
+    \segments_firstres{A:46}
+    \segments_lastres{A:51}
+    
+    \segments_baseres{A:48}
+    
+    \centers{A:48}
+    
+    \prop_trans_sig{1.e-5}
+    \prop_rot_sig{1.e-6}
+    \prop_trans_sig_freeres{0}
+    \prop_rot_sig_freeres{0}
+]
+    
+~region[\element_top_type{segment}
+    
+    \dependency_type{independent}
+    
+    \nseg{1}
+    \ncenter{1}
+    \segments_firstres{A:53}
+    \segments_lastres{A:55}
+    
+    \segments_baseres{A:54}
+    
+    \centers{A:54}
+    
+    \prop_trans_sig{1.e-5}
+    \prop_rot_sig{1.e-6}
+    \prop_trans_sig_freeres{0}
+    \prop_rot_sig_freeres{0}
+]
+    
+~region[\element_top_type{segment}
+    
+    \dependency_type{independent}
+    
+    \nseg{1}
+    \ncenter{1}
+    \segments_firstres{A:57}
+    \segments_lastres{A:76}
+    
+    \segments_baseres{A:66}
+    
+    \centers{A:66}
+    
+    \prop_trans_sig{1.e-5}
+    \prop_rot_sig{1.e-6}
+    \prop_trans_sig_freeres{0}
+    \prop_rot_sig_freeres{0}
+]
+    
+~region[\element_top_type{segment}
+    
+    \dependency_type{independent}
+    
+    \nseg{1}
+    \ncenter{1}
+    \segments_firstres{A:78}
+    \segments_lastres{A:182}
+    
+    \segments_baseres{A:130}
+    
+    \centers{A:130}
+    
+    \prop_trans_sig{1.e-5}
+    \prop_rot_sig{1.e-6}
+    \prop_trans_sig_freeres{0}
+    \prop_rot_sig_freeres{0}
+]
+    
+~region[\element_top_type{segment}
+    
+    \dependency_type{independent}
+    
+    \nseg{1}
+    \ncenter{1}
+    \segments_firstres{B:52}
+    \segments_lastres{B:62}
+    
+    \segments_baseres{B:57}
+    
+    \centers{B:57}
+    
+    \prop_trans_sig{1.e-5}
+    \prop_rot_sig{1.e-6}
+    \prop_trans_sig_freeres{0}
+    \prop_rot_sig_freeres{0}
+]
+    
+~region[\element_top_type{segment}
+    
+    \dependency_type{independent}
+    
+    \nseg{2}
+    \ncenter{2}
+    \segments_firstres{B:64,B:79}
+    \segments_lastres{B:77,B:90}
+    
+    \segments_baseres{B:70,B:84}
+    
+    \centers{B:70,B:84}
+    
+    \prop_trans_sig{1.e-5}
+    \prop_rot_sig{1.e-6}
+    \prop_trans_sig_freeres{0}
+    \prop_rot_sig_freeres{0}
+]
+    
+~region[\element_top_type{segment}
+    
+    \dependency_type{independent}
+    
+    \nseg{1}
+    \ncenter{1}
+    \segments_firstres{B:92}
+    \segments_lastres{B:190}
+    
+    \segments_baseres{B:141}
+    
+    \centers{B:141}
+    
+    \prop_trans_sig{1.e-5}
+    \prop_rot_sig{1.e-6}
+    \prop_trans_sig_freeres{0}
+    \prop_rot_sig_freeres{0}
+]
+    

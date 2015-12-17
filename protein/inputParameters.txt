@@ -1,0 +1,74 @@
+~sim_gen_def[
+   \simulation_typ{PT}  PT EEMC SEQ_PT SEQ_EEMC NM DBFR
+   \minimize_type{samc}
+   \energy_report{2}
+   \num_procs{6} # of processors to be used (default is 1) use replica_number+1
+   \prop_type{tors} cart: cartesian, tors: torsional
+   \prop_tors_sig{0} 1.e-5 proposal sig 0 < number < 2 Pi, usually 1.e-5
+   \prop_rot_sig{0} 1.e-5 {0 <= radian < 2 Pi}
+   \prop_trans_sig{0} 1.e-4 {Angstrom >= 0.0}
+   \prop_clos_sig{1.e-4} 1.e-3 {Angstrom >= 0.0}
+   \replica_number{5} :5 10 number >=0 replicas:0, 1, 2, 3, 4, ....
+   \total_step_mc{1500000} 2000000 :10   number > 1
+   \local_step_md{1} 10     number > 1
+   \time_step_md{0.5} :0.5
+   \statistics_freq{1000} 200
+   \write_energy_unit{kcal} kcal  Ha: atomic unit, kcal: kcal/mol
+   \prob_eemc_jump{0.10}   :0.15   number in 0,1
+   \temperature{300} 300
+   \stsamc_type{trigonom}
+   \stsamc_period{1000} 4000 10000
+   \stsamc_ampl{1000} 2500
+   \stsamc_shift{0}
+   \energy_gap{1.12} :1.25 number > 1.0 defined as E_i = n^(i): n = 1.2
+   \eemc_disk_size{10}  1000
+   \burn_in_B{0} 2
+   \burn_in_N{0} 2
+   \postprop_minimize{clos} clos
+   \postprop_minimize_itmax{8} {integer >= 0}
+   \postprop_minimize_energy{bond_bend} {bond,bond_bend,bond_bend_tors,bond_bend_tors_onfo,all}
+   \extend_inter{3bond_conn} 3bond_conn, 4bond_conn, off:default
+   \cancel_res_inter{off} local, neighbor (includes local), off
+   \rinter_switch_length{0.0} 1.0 real inter switching length in A
+   \inter_list{none} lnk_list none
+   \EEMC_Emin{-0.3} -0.04 in Ha
+   \EEMC_Emax{0.0}  0.0 in Ha
+   \random_seed{-21516931}
+]
+
+~sim_mol_def[
+  \system_def{residue} primitive
+  \cgres_model{KB_3pt}  KB_3pt, off 
+  \mol_parm_file{/data/coml-nmsi/sdemharter/mosaics//top_3pt_prot_na.rtf}
+  \bond_database_file{/data/coml-nmsi/sdemharter/mosaics/par_3pt_prot_na.prm} 
+  \bend_database_file{/data/coml-nmsi/sdemharter/mosaics/par_3pt_prot_na.prm} 
+  \tors_database_file{/data/coml-nmsi/sdemharter/mosaics/par_3pt_prot_na.prm} 
+  \onfo_database_file{/data/coml-nmsi/sdemharter/mosaics/par_3pt_prot_na.prm} 
+  \inter_database_file{/data/coml-nmsi/sdemharter/mosaics/par_3pt_prot_na.prm} 
+
+  bond_database_file{/home/scratch/demhart/mosaics/par_3pt_prot_na.prm} 
+  bend_database_file{/home/scratch/demhart/mosaics/par_3pt_prot_na.prm} 
+  tors_database_file{/home/scratch/demhart/mosaics/par_3pt_prot_na.prm} 
+  onfo_database_file{/home/scratch/demhart/mosaics/par_3pt_prot_na.prm} 
+  inter_database_file{/home/scratch/demhart/mosaics/par_3pt_prot_na.prm} 
+  
+  mol_parm_file{/home/scratch/mosaics/top_3pt_prot_na.rtf}
+  bond_database_file{/home/scratch/mosaics/par_3pt_prot_na.prm} 
+  bend_database_file{/home/scratch/mosaics/par_3pt_prot_na.prm} 
+  tors_database_file{/home/scratch/mosaics/par_3pt_prot_na.prm} 
+  onfo_database_file{/home/scratch/mosaics/par_3pt_prot_na.prm} 
+  inter_database_file{/home/scratch/mosaics/par_3pt_prot_na.prm} 
+  
+  \pos_init_file{init.pdb}
+  \pos_out_file{last_frame.pdb}
+  \atom_pos_file{sampled.pos.pdb}
+  \tors_pos_file{sampled.tors_pos}
+  \epot_file{sampled.pot_energy}
+  \einter_file{sampled.inter_energy}
+  \region_database_file{region.data}
+  \energy_term{bond}
+  \energy_term{bend}
+  \energy_term{tors}
+  \energy_term{onfo}
+  \energy_term{inter}
+]

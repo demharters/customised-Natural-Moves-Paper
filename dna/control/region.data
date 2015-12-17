@@ -1,0 +1,25 @@
+
+~region[element_top_type{residue}
+    \dependency_type{independent}
+
+    \nres{12}
+    \residues{A:4,A:5,A:6,A:7,A:8,A:9,B:16,B:17,B:18,B:19,B:20,B:21}
+
+    \ncenter{1}
+    \centers{A:6}
+    \nrespair{6}
+    
+    \residue_pair{A:4,B:21}
+    \residue_pair{A:5,B:20}
+    \residue_pair{A:6,B:19}
+    \residue_pair{A:7,B:18}
+    \residue_pair{A:8,B:17}
+    \residue_pair{A:9,B:16}
+
+    \prop_trans_sig{0.0}
+    \prop_rot_sig{0.0}
+    \prop_trans_sig_freeres{.5e-5}
+    \prop_rot_sig_freeres{.5e-6}
+    \prop_trans_sig_respair{.5e-5}
+    \prop_rot_sig_respair{.5e-6}
+]
